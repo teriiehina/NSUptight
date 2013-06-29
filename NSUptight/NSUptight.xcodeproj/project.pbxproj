@@ -1,0 +1,465 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D7394B9E177F7D4700D23738 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7394B9D177F7D4700D23738 /* Cocoa.framework */; };
+		D7394BA8177F7D4700D23738 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D7394BA6177F7D4700D23738 /* InfoPlist.strings */; };
+		D7394BAC177F7D4700D23738 /* NSUptight.m in Sources */ = {isa = PBXBuildFile; fileRef = D7394BAB177F7D4700D23738 /* NSUptight.m */; };
+		D7394BB3177F7D4800D23738 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7394BB2177F7D4800D23738 /* XCTest.framework */; };
+		D7394BB4177F7D4800D23738 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7394B9D177F7D4700D23738 /* Cocoa.framework */; };
+		D7394BB7177F7D4800D23738 /* NSUptight.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7394B9A177F7D4700D23738 /* NSUptight.framework */; };
+		D7394BBD177F7D4800D23738 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D7394BBB177F7D4800D23738 /* InfoPlist.strings */; };
+		D7394BBF177F7D4800D23738 /* NSUptightTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D7394BBE177F7D4800D23738 /* NSUptightTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D7394BB5177F7D4800D23738 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D7394B91177F7D4700D23738 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D7394B99177F7D4700D23738;
+			remoteInfo = NSUptight;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D7394B9A177F7D4700D23738 /* NSUptight.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NSUptight.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7394B9D177F7D4700D23738 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		D7394BA0177F7D4700D23738 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D7394BA1177F7D4700D23738 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		D7394BA2177F7D4700D23738 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		D7394BA5177F7D4700D23738 /* NSUptight-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NSUptight-Info.plist"; sourceTree = "<group>"; };
+		D7394BA7177F7D4700D23738 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D7394BA9177F7D4700D23738 /* NSUptight-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSUptight-Prefix.pch"; sourceTree = "<group>"; };
+		D7394BAA177F7D4700D23738 /* NSUptight.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSUptight.h; sourceTree = "<group>"; };
+		D7394BAB177F7D4700D23738 /* NSUptight.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSUptight.m; sourceTree = "<group>"; };
+		D7394BB1177F7D4800D23738 /* NSUptightTests.xctest */ = {isa = PBXFileReference; explicitFileType = folder; includeInIndex = 0; path = NSUptightTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7394BB2177F7D4800D23738 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		D7394BBA177F7D4800D23738 /* NSUptightTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NSUptightTests-Info.plist"; sourceTree = "<group>"; };
+		D7394BBC177F7D4800D23738 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D7394BBE177F7D4800D23738 /* NSUptightTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSUptightTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D7394B96177F7D4700D23738 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7394B9E177F7D4700D23738 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7394BAE177F7D4800D23738 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7394BB7177F7D4800D23738 /* NSUptight.framework in Frameworks */,
+				D7394BB4177F7D4800D23738 /* Cocoa.framework in Frameworks */,
+				D7394BB3177F7D4800D23738 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D7394B90177F7D4700D23738 = {
+			isa = PBXGroup;
+			children = (
+				D7394BA3177F7D4700D23738 /* NSUptight */,
+				D7394BB8177F7D4800D23738 /* NSUptightTests */,
+				D7394B9C177F7D4700D23738 /* Frameworks */,
+				D7394B9B177F7D4700D23738 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D7394B9B177F7D4700D23738 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D7394B9A177F7D4700D23738 /* NSUptight.framework */,
+				D7394BB1177F7D4800D23738 /* NSUptightTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D7394B9C177F7D4700D23738 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D7394B9D177F7D4700D23738 /* Cocoa.framework */,
+				D7394BB2177F7D4800D23738 /* XCTest.framework */,
+				D7394B9F177F7D4700D23738 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D7394B9F177F7D4700D23738 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D7394BA0177F7D4700D23738 /* Foundation.framework */,
+				D7394BA1177F7D4700D23738 /* CoreData.framework */,
+				D7394BA2177F7D4700D23738 /* AppKit.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		D7394BA3177F7D4700D23738 /* NSUptight */ = {
+			isa = PBXGroup;
+			children = (
+				D7394BAA177F7D4700D23738 /* NSUptight.h */,
+				D7394BAB177F7D4700D23738 /* NSUptight.m */,
+				D7394BA4177F7D4700D23738 /* Supporting Files */,
+			);
+			path = NSUptight;
+			sourceTree = "<group>";
+		};
+		D7394BA4177F7D4700D23738 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D7394BA5177F7D4700D23738 /* NSUptight-Info.plist */,
+				D7394BA6177F7D4700D23738 /* InfoPlist.strings */,
+				D7394BA9177F7D4700D23738 /* NSUptight-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D7394BB8177F7D4800D23738 /* NSUptightTests */ = {
+			isa = PBXGroup;
+			children = (
+				D7394BBE177F7D4800D23738 /* NSUptightTests.m */,
+				D7394BB9177F7D4800D23738 /* Supporting Files */,
+			);
+			path = NSUptightTests;
+			sourceTree = "<group>";
+		};
+		D7394BB9177F7D4800D23738 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D7394BBA177F7D4800D23738 /* NSUptightTests-Info.plist */,
+				D7394BBB177F7D4800D23738 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D7394B97177F7D4700D23738 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D7394B99177F7D4700D23738 /* NSUptight */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7394BC2177F7D4800D23738 /* Build configuration list for PBXNativeTarget "NSUptight" */;
+			buildPhases = (
+				D7394B95177F7D4700D23738 /* Sources */,
+				D7394B96177F7D4700D23738 /* Frameworks */,
+				D7394B97177F7D4700D23738 /* Headers */,
+				D7394B98177F7D4700D23738 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NSUptight;
+			productName = NSUptight;
+			productReference = D7394B9A177F7D4700D23738 /* NSUptight.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D7394BB0177F7D4800D23738 /* NSUptightTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7394BC5177F7D4800D23738 /* Build configuration list for PBXNativeTarget "NSUptightTests" */;
+			buildPhases = (
+				D7394BAD177F7D4800D23738 /* Sources */,
+				D7394BAE177F7D4800D23738 /* Frameworks */,
+				D7394BAF177F7D4800D23738 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D7394BB6177F7D4800D23738 /* PBXTargetDependency */,
+			);
+			name = NSUptightTests;
+			productName = NSUptightTests;
+			productReference = D7394BB1177F7D4800D23738 /* NSUptightTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D7394B91177F7D4700D23738 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = teriiehina;
+				TargetAttributes = {
+					D7394BB0177F7D4800D23738 = {
+						TestTargetID = D7394B99177F7D4700D23738;
+					};
+				};
+			};
+			buildConfigurationList = D7394B94177F7D4700D23738 /* Build configuration list for PBXProject "NSUptight" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D7394B90177F7D4700D23738;
+			productRefGroup = D7394B9B177F7D4700D23738 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D7394B99177F7D4700D23738 /* NSUptight */,
+				D7394BB0177F7D4800D23738 /* NSUptightTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D7394B98177F7D4700D23738 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7394BA8177F7D4700D23738 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7394BAF177F7D4800D23738 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7394BBD177F7D4800D23738 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D7394B95177F7D4700D23738 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7394BAC177F7D4700D23738 /* NSUptight.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7394BAD177F7D4800D23738 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7394BBF177F7D4800D23738 /* NSUptightTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D7394BB6177F7D4800D23738 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D7394B99177F7D4700D23738 /* NSUptight */;
+			targetProxy = D7394BB5177F7D4800D23738 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D7394BA6177F7D4700D23738 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D7394BA7177F7D4700D23738 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D7394BBB177F7D4800D23738 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D7394BBC177F7D4800D23738 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D7394BC0177F7D4800D23738 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		D7394BC1177F7D4800D23738 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		D7394BC3177F7D4800D23738 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NSUptight/NSUptight-Prefix.pch";
+				INFOPLIST_FILE = "NSUptight/NSUptight-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		D7394BC4177F7D4800D23738 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NSUptight/NSUptight-Prefix.pch";
+				INFOPLIST_FILE = "NSUptight/NSUptight-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		D7394BC6177F7D4800D23738 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/NSUptight.framework/Versions/A/NSUptight";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NSUptight/NSUptight-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "NSUptightTests/NSUptightTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		D7394BC7177F7D4800D23738 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/NSUptight.framework/Versions/A/NSUptight";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NSUptight/NSUptight-Prefix.pch";
+				INFOPLIST_FILE = "NSUptightTests/NSUptightTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D7394B94177F7D4700D23738 /* Build configuration list for PBXProject "NSUptight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7394BC0177F7D4800D23738 /* Debug */,
+				D7394BC1177F7D4800D23738 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7394BC2177F7D4800D23738 /* Build configuration list for PBXNativeTarget "NSUptight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7394BC3177F7D4800D23738 /* Debug */,
+				D7394BC4177F7D4800D23738 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D7394BC5177F7D4800D23738 /* Build configuration list for PBXNativeTarget "NSUptightTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7394BC6177F7D4800D23738 /* Debug */,
+				D7394BC7177F7D4800D23738 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D7394B91177F7D4700D23738 /* Project object */;
+}
