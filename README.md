@@ -1,0 +1,4 @@
+NSUptight
+=========
+
+Validation for NSObject
