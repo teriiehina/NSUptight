@@ -76,10 +76,26 @@ static NSString *kInvalidEmailAddress = @"tim@microsoft";
     {
         XCTAssertFalse([invalid isValidDay], @"%@ should not be a valid day" , invalid);
     }
-
 }
 
-//- (BOOL)isValidMonth;
+- (void)testIsValidMonth
+{
+    NSArray *valids   = @[@"1"  , @"2"  , @"3"  , @"4"  , @"5"  , @"6"  , @"7"  , @"8"  , @"9"  ,
+                          @"01" , @"02" , @"03" , @"04" , @"05" , @"06" , @"07" , @"08" , @"09" ,
+                          @"10" , @"11" , @"12"];
+    
+    NSArray *invalids = @[@"0" , @"00" , @"42" , @"-1" , @"january" , @"whatever" , @"hello world" ,];
+    
+    for (NSString *valid in valids)
+    {
+        XCTAssertTrue([valid isValidMonth], @"%@ should be a valid month" , valid);
+    }
+    
+    for (NSString *invalid in invalids)
+    {
+        XCTAssertFalse([invalid isValidMonth], @"%@ should not be a valid month" , invalid);
+    }
+}
 //- (BOOL)isValidYear;
 //
 //- (BOOL)isValidCreditCardNumber;

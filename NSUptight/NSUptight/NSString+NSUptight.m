@@ -47,6 +47,7 @@
 {
     if ( ! [self isDigitsOnly]) return NO;
     if (self.length > 2)        return NO;
+    if (self.intValue < 1)      return NO;
     if (self.intValue > 12)     return NO;
     
     return YES;
