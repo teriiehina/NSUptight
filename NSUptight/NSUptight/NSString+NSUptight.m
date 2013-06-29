@@ -90,7 +90,9 @@
 
 - (BOOL)isValidCreditCardNumber
 {
-    NSString *pass_value = [NSString stringWithString:self];
+    NSString *pass_value = [self stringByReplacingOccurrencesOfString:@" " withString:@""];
+    pass_value           = [pass_value stringByReplacingOccurrencesOfString:@"-" withString:@""];
+
     NSMutableArray *character;
     
     unsigned long long odd_no;

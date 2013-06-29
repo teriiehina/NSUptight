@@ -22,6 +22,12 @@ static NSString *kValidFullNameString = @"Peter MEUEL";
 static NSString *kValidEmailAddress   = @"tim@apple.com";
 static NSString *kInvalidEmailAddress = @"tim@microsoft";
 
+static NSString *kValidCreditCardNumber1  = @"4111111111111111";
+static NSString *kValidCreditCardNumber2  = @"4111 1111 1111 1111";
+static NSString *kValidCreditCardNumber3  = @"4111-1111-1111-1111";
+static NSString *kInvalidCreditCardNumber = @"4111111111111112";
+
+
 @interface NSUptightNSStringTests : XCTestCase
 
 @end
@@ -65,7 +71,7 @@ static NSString *kInvalidEmailAddress = @"tim@microsoft";
                           @"20" , @"21" , @"22" , @"23" , @"24" , @"25" , @"26" , @"27" , @"28" , @"29" ,
                           @"30" , @"31"];
     
-    NSArray *invalids = @[@"0" , @"00" , @"42" , @"-1" , @"monday" , @"whatever" , @"hello world" ,];
+    NSArray *invalids = @[@"0" , @"00" , @"42" , @"-1" , @"monday" , @"whatever" , @"hello world"];
     
     for (NSString *valid in valids)
     {
@@ -84,7 +90,7 @@ static NSString *kInvalidEmailAddress = @"tim@microsoft";
                           @"01" , @"02" , @"03" , @"04" , @"05" , @"06" , @"07" , @"08" , @"09" ,
                           @"10" , @"11" , @"12"];
     
-    NSArray *invalids = @[@"0" , @"00" , @"42" , @"-1" , @"january" , @"whatever" , @"hello world" ,];
+    NSArray *invalids = @[@"0" , @"00" , @"42" , @"-1" , @"january" , @"whatever" , @"hello world"];
     
     for (NSString *valid in valids)
     {
@@ -96,8 +102,32 @@ static NSString *kInvalidEmailAddress = @"tim@microsoft";
         XCTAssertFalse([invalid isValidMonth], @"%@ should not be a valid month" , invalid);
     }
 }
-//- (BOOL)isValidYear;
-//
-//- (BOOL)isValidCreditCardNumber;
+
+//- (void)testIsValidYear
+//{
+//    NSArray *valids   = @[@"-500"  , @"0"  , @"00"  , @"1492"  , @"2001"  , @"1983"];
+//    
+//    NSArray *invalids = @[@"2013 AC" , @"two thousand thirtheen" , @"whatever" , @"hello world"];
+//    
+//    for (NSString *valid in valids)
+//    {
+//        XCTAssertTrue([valid isValidYear], @"%@ should be a valid year" , valid);
+//    }
+//    
+//    for (NSString *invalid in invalids)
+//    {
+//        XCTAssertFalse([invalid isValidYear], @"%@ should not be a valid year" , invalid);
+//    }
+//}
+
+- (void)testIsValidCreditCardNumber
+{
+    XCTAssertTrue([kValidCreditCardNumber1 isValidCreditCardNumber], @"%@ should be a valid credit card number" , kValidCreditCardNumber1);
+    XCTAssertTrue([kValidCreditCardNumber2 isValidCreditCardNumber], @"%@ should be a valid credit card number" , kValidCreditCardNumber2);
+    XCTAssertTrue([kValidCreditCardNumber3 isValidCreditCardNumber], @"%@ should be a valid credit card number" , kValidCreditCardNumber3);
+    
+    XCTAssertFalse([kInvalidCreditCardNumber isValidCreditCardNumber], @"%@ should not be a valid credit card number" , kInvalidCreditCardNumber);
+
+}
 
 @end
