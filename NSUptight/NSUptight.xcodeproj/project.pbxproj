@@ -15,6 +15,9 @@
 		D7394BB7177F7D4800D23738 /* NSUptight.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7394B9A177F7D4700D23738 /* NSUptight.framework */; };
 		D7394BBD177F7D4800D23738 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D7394BBB177F7D4800D23738 /* InfoPlist.strings */; };
 		D7394BBF177F7D4800D23738 /* NSUptightTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D7394BBE177F7D4800D23738 /* NSUptightTests.m */; };
+		D7394BC9177F7FA800D23738 /* NSUptightNSStringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D7394BC8177F7FA800D23738 /* NSUptightNSStringTests.m */; };
+		D7394BCC177F803700D23738 /* NSString+NSUptight.h in Headers */ = {isa = PBXBuildFile; fileRef = D7394BCA177F803700D23738 /* NSString+NSUptight.h */; };
+		D7394BCD177F803700D23738 /* NSString+NSUptight.m in Sources */ = {isa = PBXBuildFile; fileRef = D7394BCB177F803700D23738 /* NSString+NSUptight.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +46,9 @@
 		D7394BBA177F7D4800D23738 /* NSUptightTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NSUptightTests-Info.plist"; sourceTree = "<group>"; };
 		D7394BBC177F7D4800D23738 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D7394BBE177F7D4800D23738 /* NSUptightTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSUptightTests.m; sourceTree = "<group>"; };
+		D7394BC8177F7FA800D23738 /* NSUptightNSStringTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSUptightNSStringTests.m; sourceTree = "<group>"; };
+		D7394BCA177F803700D23738 /* NSString+NSUptight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+NSUptight.h"; sourceTree = "<group>"; };
+		D7394BCB177F803700D23738 /* NSString+NSUptight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+NSUptight.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +117,8 @@
 			children = (
 				D7394BAA177F7D4700D23738 /* NSUptight.h */,
 				D7394BAB177F7D4700D23738 /* NSUptight.m */,
+				D7394BCA177F803700D23738 /* NSString+NSUptight.h */,
+				D7394BCB177F803700D23738 /* NSString+NSUptight.m */,
 				D7394BA4177F7D4700D23738 /* Supporting Files */,
 			);
 			path = NSUptight;
@@ -130,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				D7394BBE177F7D4800D23738 /* NSUptightTests.m */,
+				D7394BC8177F7FA800D23738 /* NSUptightNSStringTests.m */,
 				D7394BB9177F7D4800D23738 /* Supporting Files */,
 			);
 			path = NSUptightTests;
@@ -151,6 +160,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7394BCC177F803700D23738 /* NSString+NSUptight.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7394BCD177F803700D23738 /* NSString+NSUptight.m in Sources */,
 				D7394BAC177F7D4700D23738 /* NSUptight.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7394BC9177F7FA800D23738 /* NSUptightNSStringTests.m in Sources */,
 				D7394BBF177F7D4800D23738 /* NSUptightTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -450,6 +462,7 @@
 				D7394BC4177F7D4800D23738 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D7394BC5177F7D4800D23738 /* Build configuration list for PBXNativeTarget "NSUptightTests" */ = {
 			isa = XCConfigurationList;
@@ -458,6 +471,7 @@
 				D7394BC7177F7D4800D23738 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
